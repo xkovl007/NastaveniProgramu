@@ -1,0 +1,641 @@
+{
+    "root": {
+        "nastaveni": [{
+
+                "rozhrani": {
+
+                    "font": {
+
+                        "standardni": {
+
+                            "nazev": "Consolas",
+                            "velikost": "16",
+                            "popredi": {
+                                "@typ": "hex",
+                                "$": "#212110"
+                            },
+                            "pozadi": {
+                                "@typ": "hex",
+                                "$": "#141426"
+                            },
+                            "styl": "Normalni",
+                            "zarovnani": "Stred"
+                        },
+                        "vybrano": {
+
+                            "nazev": "Consolas",
+                            "velikost": "16",
+                            "popredi": {
+                                "@typ": "hex",
+                                "$": "#2424E1"
+                            },
+                            "pozadi": {
+                                "@typ": "hex",
+                                "$": "#1525D5"
+                            },
+                            "styl": "Tucne",
+                            "zarovnani": "Stred"
+                        }
+                    },
+                    "zaznamy": {
+
+                        "maxPocetNaStranku": "100",
+                        "radit": "true",
+                        "typRazeni": "Sestupne",
+                        "metodaVystupu": "HTML",
+                        "povolitObrazky": {
+                            "@zobrazitPopisek": "true",
+                            "$": "true"
+                        },
+                        "zakladniMena": "CZK",
+                        "zalamovaniRadku": {
+                            "@zobrazitSymbol": "true",
+                            "$": "true"
+                        },
+                        "znakovaSada": "Unicode",
+                        "cislovatZaznamy": {
+                            "@start": "1",
+                            "$": "true"
+                        }
+                    },
+                    "zobrazitTipy": "false",
+                    "preferovanaSirka": "800",
+                    "preferovanaVyska": "600",
+                    "menuBar": {
+                        "@plovouci": "true",
+                        "$": "true"
+                    },
+                    "animaceIkon": "false",
+                    "barevneSchema": "Modre",
+                    "jazyk": "CZ"
+                },
+                "sit": {
+
+                    "kontrolovatAktualizace": {
+                        "@priXSpusteni": "5",
+                        "$": "true"
+                    },
+                    "citacSpusteni": "1"
+                },
+                "tisk": {
+
+                    "rozliseni": {
+                        "@jednotka": "pix/inch",
+                        "$": "300"
+                    },
+                    "barevnost": "Barva",
+                    "format": "A4",
+                    "orientace": "Sirka",
+                    "kvalita": "Vysoka",
+                    "duplex": "false",
+                    "okraje": {
+                        "@uvodniStranka": "true",
+                        "@zobrazitOkraje": "false",
+
+                        "vlevo": {
+                            "@jednotka": "cm",
+                            "$": "2.5"
+                        },
+                        "vpravo": {
+                            "@jednotka": "cm",
+                            "$": "2.5"
+                        },
+                        "nahore": {
+                            "@jednotka": "cm",
+                            "$": "2.5"
+                        },
+                        "dole": {
+                            "@jednotka": "cm",
+                            "$": "2.5"
+                        }
+                    },
+                    "barevnyModel": "CMYK",
+                    "korekce": {
+
+                        "jas": "0.5",
+                        "kontrast": "0.5",
+                        "gamma": "0.5"
+                    },
+                    "orezoveZnacky": "false",
+                    "cislaStran": "true",
+                    "pocetKopii": "1"
+                },
+                "pocetZpracovavanychVlaken": "2",
+                "komprimovatVystup": {
+                    "@format": "zip",
+                    "@miraKomprese": "2",
+                    "$": "true"
+                },
+                "povolitPluginy": "true"
+            }, {
+
+                "rozhrani": {
+
+                    "font": {
+
+                        "standardni": {
+
+                            "nazev": "Arial",
+                            "velikost": "18",
+                            "popredi": {
+                                "@typ": "dec",
+                                "$": "10,15,200"
+                            },
+                            "pozadi": {
+                                "@typ": "dec",
+                                "$": "12,11,16"
+                            },
+                            "styl": "Tucne",
+                            "zarovnani": "Vlevo"
+                        },
+                        "vybrano": {
+
+                            "nazev": "Arial",
+                            "velikost": "19",
+                            "popredi": {
+                                "@typ": "dec",
+                                "$": "16,12,15"
+                            },
+                            "pozadi": {
+                                "@typ": "dec",
+                                "$": "87,161,19"
+                            },
+                            "styl": "Tucne",
+                            "zarovnani": "Vlevo"
+                        }
+                    },
+                    "zaznamy": {
+
+                        "maxPocetNaStranku": "10",
+                        "radit": "true",
+                        "typRazeni": "Vzestupne",
+                        "metodaVystupu": "PDF",
+                        "povolitObrazky": {
+                            "@zobrazitPopisek": "false",
+                            "$": "true"
+                        },
+                        "zakladniMena": "EUR",
+                        "zalamovaniRadku": {
+                            "@zobrazitSymbol": "false",
+                            "$": "true"
+                        },
+                        "znakovaSada": "UTF-8",
+                        "cislovatZaznamy": {
+                            "@start": "100",
+                            "$": "true"
+                        }
+                    },
+                    "zobrazitTipy": "true",
+                    "preferovanaSirka": "1024",
+                    "preferovanaVyska": "768",
+                    "menuBar": {
+                        "@plovouci": "false",
+                        "$": "true"
+                    },
+                    "animaceIkon": "true",
+                    "barevneSchema": "Bile",
+                    "jazyk": "CZ"
+                },
+                "sit": {
+
+                    "kontrolovatAktualizace": {
+                        "@priXSpusteni": "10",
+                        "$": "true"
+                    },
+                    "citacSpusteni": "4"
+                },
+                "tisk": {
+
+                    "rozliseni": {
+                        "@jednotka": "DPI",
+                        "$": "600"
+                    },
+                    "barevnost": "Cernobile",
+                    "format": "A5",
+                    "orientace": "Vyska",
+                    "kvalita": "Nizka",
+                    "duplex": "true",
+                    "okraje": {
+                        "@uvodniStranka": "false",
+                        "@zobrazitOkraje": "false",
+
+                        "vlevo": {
+                            "@jednotka": "mm",
+                            "$": "15"
+                        },
+                        "vpravo": {
+                            "@jednotka": "mm",
+                            "$": "15"
+                        },
+                        "nahore": {
+                            "@jednotka": "mm",
+                            "$": "20"
+                        },
+                        "dole": {
+                            "@jednotka": "mm",
+                            "$": "20"
+                        }
+                    },
+                    "barevnyModel": "CMYK",
+                    "korekce": {
+
+                        "jas": "0.75",
+                        "kontrast": "0.16",
+                        "gamma": "0.55"
+                    },
+                    "orezoveZnacky": "true",
+                    "cislaStran": "false",
+                    "pocetKopii": "10"
+                },
+                "pocetZpracovavanychVlaken": "8",
+                "komprimovatVystup": {
+                    "@format": "zip",
+                    "@miraKomprese": "5",
+                    "$": "true"
+                },
+                "povolitPluginy": "false"
+            }, {
+
+                "rozhrani": {
+
+                    "font": {
+
+                        "standardni": {
+
+                            "nazev": "Helvetica",
+                            "velikost": "20",
+                            "popredi": {
+                                "@typ": "hex",
+                                "$": "#2E1FE6"
+                            },
+                            "pozadi": {
+                                "@typ": "hex",
+                                "$": "#141415"
+                            },
+                            "styl": "Normalni",
+                            "zarovnani": "Stred"
+                        },
+                        "vybrano": {
+
+                            "nazev": "Consolas",
+                            "velikost": "16",
+                            "popredi": {
+                                "@typ": "hex",
+                                "$": "#242418"
+                            },
+                            "pozadi": {
+                                "@typ": "hex",
+                                "$": "#15E1D2"
+                            },
+                            "styl": "Kurziva",
+                            "zarovnani": "Vpravo"
+                        }
+                    },
+                    "zaznamy": {
+
+                        "maxPocetNaStranku": "1000",
+                        "radit": "true",
+                        "typRazeni": "Sestupne",
+                        "metodaVystupu": "CSV",
+                        "povolitObrazky": {
+                            "@zobrazitPopisek": "true",
+                            "$": "true"
+                        },
+                        "zakladniMena": "CZK",
+                        "zalamovaniRadku": {
+                            "@zobrazitSymbol": "true",
+                            "$": "true"
+                        },
+                        "znakovaSada": "UTF-16",
+                        "cislovatZaznamy": {
+                            "@start": "100",
+                            "$": "true"
+                        }
+                    },
+                    "zobrazitTipy": "false",
+                    "preferovanaSirka": "1600",
+                    "preferovanaVyska": "1000",
+                    "menuBar": {
+                        "@plovouci": "false",
+                        "$": "false"
+                    },
+                    "animaceIkon": "false",
+                    "barevneSchema": "Bile",
+                    "jazyk": "EN"
+                },
+                "sit": {
+
+                    "kontrolovatAktualizace": {
+                        "@priXSpusteni": "10",
+                        "$": "true"
+                    },
+                    "citacSpusteni": "2"
+                },
+                "tisk": {
+
+                    "rozliseni": {
+                        "@jednotka": "DPI",
+                        "$": "1200"
+                    },
+                    "barevnost": "Barva",
+                    "format": "A6",
+                    "orientace": "Sirka",
+                    "kvalita": "Standardni",
+                    "duplex": "true",
+                    "okraje": {
+                        "@uvodniStranka": "false",
+                        "@zobrazitOkraje": "true",
+
+                        "vlevo": {
+                            "@jednotka": "cm",
+                            "$": "2.8"
+                        },
+                        "vpravo": {
+                            "@jednotka": "cm",
+                            "$": "2.8"
+                        },
+                        "nahore": {
+                            "@jednotka": "cm",
+                            "$": "2.1"
+                        },
+                        "dole": {
+                            "@jednotka": "cm",
+                            "$": "2.1"
+                        }
+                    },
+                    "barevnyModel": "HSV",
+                    "korekce": {
+
+                        "jas": "0.5",
+                        "kontrast": "0.5",
+                        "gamma": "0.5"
+                    },
+                    "orezoveZnacky": "true",
+                    "cislaStran": "false",
+                    "pocetKopii": "1000"
+                },
+                "pocetZpracovavanychVlaken": "1",
+                "komprimovatVystup": {
+                    "@format": "zip",
+                    "@miraKomprese": "1",
+                    "$": "true"
+                },
+                "povolitPluginy": "true"
+            }, {
+
+                "rozhrani": {
+
+                    "font": {
+
+                        "standardni": {
+
+                            "nazev": "Courier",
+                            "velikost": "12",
+                            "popredi": {
+                                "@typ": "hex",
+                                "$": "#161219"
+                            },
+                            "pozadi": {
+                                "@typ": "hex",
+                                "$": "#121610"
+                            },
+                            "styl": "Kurziva",
+                            "zarovnani": "Stred"
+                        },
+                        "vybrano": {
+
+                            "nazev": "Courier",
+                            "velikost": "12",
+                            "popredi": {
+                                "@typ": "hex",
+                                "$": "#242412"
+                            },
+                            "pozadi": {
+                                "@typ": "html",
+                                "$": "#152016"
+                            },
+                            "styl": "Kurziva",
+                            "zarovnani": "Vlevo"
+                        }
+                    },
+                    "zaznamy": {
+
+                        "maxPocetNaStranku": "50",
+                        "radit": "false",
+                        "typRazeni": "Sestupne",
+                        "metodaVystupu": "PDF",
+                        "povolitObrazky": {
+                            "@zobrazitPopisek": "false",
+                            "$": "false"
+                        },
+                        "zakladniMena": "USD",
+                        "zalamovaniRadku": {
+                            "@zobrazitSymbol": "false",
+                            "$": "false"
+                        },
+                        "znakovaSada": "ASCII",
+                        "cislovatZaznamy": {
+                            "@start": "1000",
+                            "$": "true"
+                        }
+                    },
+                    "zobrazitTipy": "true",
+                    "preferovanaSirka": "320",
+                    "preferovanaVyska": "240",
+                    "menuBar": {
+                        "@plovouci": "false",
+                        "$": "true"
+                    },
+                    "animaceIkon": "true",
+                    "barevneSchema": "Sede",
+                    "jazyk": "SK"
+                },
+                "sit": {
+
+                    "kontrolovatAktualizace": {
+                        "@priXSpusteni": "50",
+                        "$": "true"
+                    },
+                    "citacSpusteni": "21"
+                },
+                "tisk": {
+
+                    "rozliseni": {
+                        "@jednotka": "DPI",
+                        "$": "600"
+                    },
+                    "barevnost": "Barva",
+                    "format": "A3",
+                    "orientace": "Sirka",
+                    "kvalita": "Vysoka",
+                    "duplex": "true",
+                    "okraje": {
+                        "@uvodniStranka": "true",
+                        "@zobrazitOkraje": "false",
+
+                        "vlevo": {
+                            "@jednotka": "cm",
+                            "$": "2.5"
+                        },
+                        "vpravo": {
+                            "@jednotka": "cm",
+                            "$": "2.5"
+                        },
+                        "nahore": {
+                            "@jednotka": "cm",
+                            "$": "2.5"
+                        },
+                        "dole": {
+                            "@jednotka": "cm",
+                            "$": "2.5"
+                        }
+                    },
+                    "barevnyModel": "RGB",
+                    "korekce": {
+
+                        "jas": "0.95",
+                        "kontrast": "0.52",
+                        "gamma": "0.54"
+                    },
+                    "orezoveZnacky": "true",
+                    "cislaStran": "false",
+                    "pocetKopii": "5"
+                },
+                "pocetZpracovavanychVlaken": "25",
+                "komprimovatVystup": {
+                    "@format": "zip",
+                    "@miraKomprese": "10",
+                    "$": "true"
+                },
+                "povolitPluginy": "true"
+            }, {
+
+                "rozhrani": {
+
+                    "font": {
+
+                        "standardni": {
+
+                            "nazev": "Monospaced",
+                            "velikost": "16",
+                            "popredi": {
+                                "@typ": "dec",
+                                "$": "16,100,250"
+                            },
+                            "pozadi": {
+                                "@typ": "dec",
+                                "$": "12,154,247"
+                            },
+                            "styl": "Normalni",
+                            "zarovnani": "Stred"
+                        },
+                        "vybrano": {
+
+                            "nazev": "Monospaced",
+                            "velikost": "19",
+                            "popredi": {
+                                "@typ": "dec",
+                                "$": "100,100,50"
+                            },
+                            "pozadi": {
+                                "@typ": "dec",
+                                "$": "200,251,100"
+                            },
+                            "styl": "Tucne",
+                            "zarovnani": "Vlevo"
+                        }
+                    },
+                    "zaznamy": {
+
+                        "maxPocetNaStranku": "10",
+                        "radit": "true",
+                        "typRazeni": "Vzestupne",
+                        "metodaVystupu": "PDF",
+                        "povolitObrazky": {
+                            "@zobrazitPopisek": "true",
+                            "$": "false"
+                        },
+                        "zakladniMena": "JPY",
+                        "zalamovaniRadku": {
+                            "@zobrazitSymbol": "false",
+                            "$": "true"
+                        },
+                        "znakovaSada": "Unicode",
+                        "cislovatZaznamy": {
+                            "@start": "10",
+                            "$": "true"
+                        }
+                    },
+                    "zobrazitTipy": "true",
+                    "preferovanaSirka": "800",
+                    "preferovanaVyska": "600",
+                    "menuBar": {
+                        "@plovouci": "false",
+                        "$": "true"
+                    },
+                    "animaceIkon": "true",
+                    "barevneSchema": "Modre",
+                    "jazyk": "JP"
+                },
+                "sit": {
+
+                    "kontrolovatAktualizace": {
+                        "@priXSpusteni": "500",
+                        "$": "true"
+                    },
+                    "citacSpusteni": "241"
+                },
+                "tisk": {
+
+                    "rozliseni": {
+                        "@jednotka": "DPI",
+                        "$": "300"
+                    },
+                    "barevnost": "Barva",
+                    "format": "A3",
+                    "orientace": "Vyska",
+                    "kvalita": "Vysoka",
+                    "duplex": "false",
+                    "okraje": {
+                        "@uvodniStranka": "true",
+                        "@zobrazitOkraje": "false",
+
+                        "vlevo": {
+                            "@jednotka": "cm",
+                            "$": "2.55"
+                        },
+                        "vpravo": {
+                            "@jednotka": "cm",
+                            "$": "2.55"
+                        },
+                        "nahore": {
+                            "@jednotka": "cm",
+                            "$": "2.5"
+                        },
+                        "dole": {
+                            "@jednotka": "cm",
+                            "$": "2.5"
+                        }
+                    },
+                    "barevnyModel": "CMYK",
+                    "korekce": {
+
+                        "jas": "0.21",
+                        "kontrast": "0.16",
+                        "gamma": "0.17"
+                    },
+                    "orezoveZnacky": "false",
+                    "cislaStran": "true",
+                    "pocetKopii": "1"
+                },
+                "pocetZpracovavanychVlaken": "2",
+                "komprimovatVystup": {
+                    "@format": "zip",
+                    "@miraKomprese": "5",
+                    "$": "true"
+                },
+                "povolitPluginy": "true"
+            }]
+    }
+}
+    

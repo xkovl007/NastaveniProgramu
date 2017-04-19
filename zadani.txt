@@ -1,0 +1,35 @@
+Téma projektu - Nastavení/konfigurace aplikace (existující/vymyšlená)
+
+Projekt bude obsahovat následující:
+1. XML
+
+    65 bodů
+    XML soubor - s daty
+    XMLSchema - definováno cca 50 různých elementů (unikátní jména) a 10 atributů (unikátní jména)
+    XSLT - soubory s transformacemi do HTML nebo JSON
+    XML bude obsahovat minimálně 5 ukázkových záznamů
+    Odevzdání
+        1 x XML
+        1x XML Schema
+        1 x XSLT + 1x transformace do HTML nebo JSON
+        1 x profil projektu na Githubu + základní popis (odkaz)
+
+2. Dokumentace v HTML
+
+    35 bodů 
+    Minimálně 4000 znaků
+    Jedna stránka HTML5 (bez css, validní, validator.w3.org)
+    Sémanticky správně
+    Obsahuje následující elementy
+    main, head, title, header, nav, section, article, footer, p, table, ul, li, a
+    Struktura:
+        Název 
+        Obsah s odkazy 
+        Úvod – o čem to je. 
+        Metodika (použité nástroje, ...) 
+        Popis elementů a atributů (proč, co představují) 
+        Popis transformace 
+        Závěr 
+        Patička (autor atd.)
+    Odevzdání
+        1 x HTML soubor 

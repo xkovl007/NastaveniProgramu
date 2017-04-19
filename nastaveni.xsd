@@ -1,0 +1,341 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root" type="rootType"/>
+  <xs:complexType name="fontType">
+    <xs:sequence>
+      <xs:element type="standardniType" name="standardni"/>
+      <xs:element type="vybranoType" name="vybrano"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="povolitObrazkyType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="zobrazitPopisek" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="nastaveniType">
+    <xs:sequence>
+      <xs:element type="rozhraniType" name="rozhrani"/>
+      <xs:element type="sitType" name="sit"/>
+      <xs:element type="tiskType" name="tisk"/>
+      <xs:element type="xs:byte" name="pocetZpracovavanychVlaken"/>
+      <xs:element type="komprimovatVystupType" name="komprimovatVystup"/>
+      <xs:element type="xs:boolean" name="povolitPluginy"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="poprediType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="typ" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="vybranoType">
+    <xs:sequence>
+      <xs:element name="nazev">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Consolas"/>
+            <xs:enumeration value="Arial"/>
+            <xs:enumeration value="Courier"/>
+            <xs:enumeration value="Monospaced"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:byte" name="velikost"/>
+      <xs:element type="poprediType" name="popredi"/>
+      <xs:element type="pozadiType" name="pozadi"/>
+      <xs:element name="styl">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Normalni"/>
+            <xs:enumeration value="Tucne"/>
+            <xs:enumeration value="Kurziva"/>
+            <xs:enumeration value="Podtrzene"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="zarovnani">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Stred"/>
+            <xs:enumeration value="Vlevo"/>
+            <xs:enumeration value="Vpravo"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="zalamovaniRadkuType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="zobrazitSymbol" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="pozadiType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="typ" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="cislovatZaznamyType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="start" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="rozliseniType">
+    <xs:simpleContent>
+      <xs:extension base="xs:short">
+        <xs:attribute type="xs:string" name="jednotka" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="nahoreType">
+    <xs:simpleContent>
+      <xs:extension base="xs:float">
+        <xs:attribute type="xs:string" name="jednotka" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="okrajeType">
+    <xs:sequence>
+      <xs:element type="vlevoType" name="vlevo"/>
+      <xs:element type="vpravoType" name="vpravo"/>
+      <xs:element type="nahoreType" name="nahore"/>
+      <xs:element type="doleType" name="dole"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="uvodniStranka" use="optional"/>
+    <xs:attribute type="xs:string" name="zobrazitOkraje" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="korekceType">
+    <xs:sequence>
+      <xs:element type="xs:float" name="jas"/>
+      <xs:element type="xs:float" name="kontrast"/>
+      <xs:element type="xs:float" name="gamma"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="zaznamyType">
+    <xs:sequence>
+      <xs:element type="xs:short" name="maxPocetNaStranku"/>
+      <xs:element type="xs:boolean" name="radit"/>
+      <xs:element name="typRazeni">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Sestupne"/>
+            <xs:enumeration value="Vzestupne"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="metodaVystupu">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="HTML"/>
+            <xs:enumeration value="PDF"/>
+            <xs:enumeration value="CSV"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="povolitObrazkyType" name="povolitObrazky"/>
+      <xs:element name="zakladniMena">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="CZK"/>
+            <xs:enumeration value="EUR"/>
+            <xs:enumeration value="USD"/>
+            <xs:enumeration value="JPY"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="zalamovaniRadkuType" name="zalamovaniRadku"/>
+      <xs:element name="znakovaSada">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Unicode"/>
+            <xs:enumeration value="UTF-8"/>
+            <xs:enumeration value="UTF-16"/>
+            <xs:enumeration value="ASCII"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="cislovatZaznamyType" name="cislovatZaznamy"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="kontrolovatAktualizaceType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="priXSpusteni" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="vpravoType">
+    <xs:simpleContent>
+      <xs:extension base="xs:float">
+        <xs:attribute type="xs:string" name="jednotka" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="rootType">
+    <xs:sequence>
+      <xs:element type="nastaveniType" name="nastaveni" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="menuBarType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="plovouci" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="komprimovatVystupType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="format" use="optional"/>
+        <xs:attribute type="xs:byte" name="miraKomprese" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="doleType">
+    <xs:simpleContent>
+      <xs:extension base="xs:float">
+        <xs:attribute type="xs:string" name="jednotka" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="rozhraniType">
+    <xs:sequence>
+      <xs:element type="fontType" name="font"/>
+      <xs:element type="zaznamyType" name="zaznamy"/>
+      <xs:element type="xs:boolean" name="zobrazitTipy"/>
+      <xs:element type="xs:short" name="preferovanaSirka"/>
+      <xs:element type="xs:short" name="preferovanaVyska"/>
+      <xs:element type="menuBarType" name="menuBar"/>
+      <xs:element type="xs:boolean" name="animaceIkon"/>
+      <xs:element name="barevneSchema">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Modre"/>
+            <xs:enumeration value="Bile"/>
+            <xs:enumeration value="Sede"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="jazyk">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="CZ"/>
+            <xs:enumeration value="EN"/>
+            <xs:enumeration value="SK"/>
+            <xs:enumeration value="JP"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tiskType">
+    <xs:sequence>
+      <xs:element type="rozliseniType" name="rozliseni"/>
+      <xs:element name="barevnost">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Barva"/>
+            <xs:enumeration value="Cernobile"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="format">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="A4"/>
+            <xs:enumeration value="A5"/>
+            <xs:enumeration value="A6"/>
+            <xs:enumeration value="A3"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="orientace">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Sirka"/>
+            <xs:enumeration value="Vyska"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="kvalita">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Vysoka"/>
+            <xs:enumeration value="Nizka"/>
+            <xs:enumeration value="Standardni"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:boolean" name="duplex"/>
+      <xs:element type="okrajeType" name="okraje"/>
+      <xs:element name="barevnyModel">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="CMYK"/>
+            <xs:enumeration value="HSV"/>
+            <xs:enumeration value="RGB"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="korekceType" name="korekce"/>
+      <xs:element type="xs:boolean" name="orezoveZnacky"/>
+      <xs:element type="xs:boolean" name="cislaStran"/>
+      <xs:element type="xs:short" name="pocetKopii"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sitType">
+    <xs:sequence>
+      <xs:element type="kontrolovatAktualizaceType" name="kontrolovatAktualizace"/>
+      <xs:element type="xs:short" name="citacSpusteni"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vlevoType">
+    <xs:simpleContent>
+      <xs:extension base="xs:float">
+        <xs:attribute type="xs:string" name="jednotka" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="standardniType">
+    <xs:sequence>
+      <xs:element name="nazev">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Consolas"/>
+            <xs:enumeration value="Arial"/>
+            <xs:enumeration value="Helvetica"/>
+            <xs:enumeration value="Courier"/>
+            <xs:enumeration value="Monospaced"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:byte" name="velikost"/>
+      <xs:element type="poprediType" name="popredi"/>
+      <xs:element type="pozadiType" name="pozadi"/>
+      <xs:element name="styl">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Normalni"/>
+            <xs:enumeration value="Tucne"/>
+            <xs:enumeration value="Kurziva"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="zarovnani">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Stred"/>
+            <xs:enumeration value="Vlevo"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

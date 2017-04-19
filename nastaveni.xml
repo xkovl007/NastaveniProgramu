@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nastaveni.xsd">
+    <nastaveni>
+        <rozhrani>
+            <font>
+                <standardni>
+                    <nazev>Consolas</nazev>
+                    <velikost>16</velikost>
+                    <popredi typ="hex">#212110</popredi>
+                    <pozadi typ="hex">#141426</pozadi>
+                    <styl>Normalni</styl>
+                    <zarovnani>Stred</zarovnani>
+                </standardni>
+                <vybrano>
+                    <nazev>Consolas</nazev>
+                    <velikost>16</velikost>
+                    <popredi typ="hex">#2424E1</popredi>
+                    <pozadi typ="hex">#1525D5</pozadi>
+                    <styl>Tucne</styl>
+                    <zarovnani>Stred</zarovnani>
+                </vybrano>
+            </font>
+            <zaznamy>
+                <maxPocetNaStranku>100</maxPocetNaStranku>
+                <radit>true</radit>
+                <typRazeni>Sestupne</typRazeni>
+                <metodaVystupu>HTML</metodaVystupu>
+                <povolitObrazky zobrazitPopisek="true">true</povolitObrazky>
+                <zakladniMena>CZK</zakladniMena>
+                <zalamovaniRadku zobrazitSymbol="true">true</zalamovaniRadku>
+                <znakovaSada>Unicode</znakovaSada>
+                <cislovatZaznamy start="1">true</cislovatZaznamy>
+            </zaznamy>
+            <zobrazitTipy>false</zobrazitTipy>
+            <preferovanaSirka>800</preferovanaSirka>
+            <preferovanaVyska>600</preferovanaVyska>
+            <menuBar plovouci="true">true</menuBar>
+            <animaceIkon>false</animaceIkon>
+            <barevneSchema>Modre</barevneSchema>
+            <jazyk>CZ</jazyk>
+        </rozhrani>
+        <sit>
+            <kontrolovatAktualizace priXSpusteni="5">true</kontrolovatAktualizace>
+            <citacSpusteni>1</citacSpusteni>
+        </sit>
+        <tisk>
+            <rozliseni jednotka="pix/inch">300</rozliseni>
+            <barevnost>Barva</barevnost>
+            <format>A4</format>
+            <orientace>Sirka</orientace>
+            <kvalita>Vysoka</kvalita>
+            <duplex>false</duplex>
+            <okraje uvodniStranka="true" zobrazitOkraje="false">
+                <vlevo jednotka="cm">2.5</vlevo>
+                <vpravo jednotka = "cm">2.5</vpravo>
+                <nahore jednotka="cm">2.5</nahore>
+                <dole jednotka="cm">2.5</dole>
+            </okraje>
+            <barevnyModel>CMYK</barevnyModel>
+            <korekce>
+                <jas>0.5</jas>
+                <kontrast>0.5</kontrast>
+                <gamma>0.5</gamma>
+            </korekce>
+            <orezoveZnacky>false</orezoveZnacky>
+            <cislaStran>true</cislaStran>
+            <pocetKopii>1</pocetKopii>
+        </tisk>
+        <pocetZpracovavanychVlaken>2</pocetZpracovavanychVlaken>
+        <komprimovatVystup format="zip" miraKomprese="2">true</komprimovatVystup>
+        <povolitPluginy>true</povolitPluginy>
+    </nastaveni>
+    <nastaveni>
+        <rozhrani>
+            <font>
+                <standardni>
+                    <nazev>Arial</nazev>
+                    <velikost>18</velikost>
+                    <popredi typ="dec">10,15,200</popredi>
+                    <pozadi typ="dec">12,11,16</pozadi>
+                    <styl>Tucne</styl>
+                    <zarovnani>Vlevo</zarovnani>
+                </standardni>
+                <vybrano>
+                    <nazev>Arial</nazev>
+                    <velikost>19</velikost>
+                    <popredi typ="dec">16,12,15</popredi>
+                    <pozadi typ="dec">87,161,19</pozadi>
+                    <styl>Tucne</styl>
+                    <zarovnani>Vlevo</zarovnani>
+                </vybrano>
+            </font>
+            <zaznamy>
+                <maxPocetNaStranku>10</maxPocetNaStranku>
+                <radit>true</radit>
+                <typRazeni>Vzestupne</typRazeni>
+                <metodaVystupu>PDF</metodaVystupu>
+                <povolitObrazky zobrazitPopisek="false">true</povolitObrazky>
+                <zakladniMena>EUR</zakladniMena>
+                <zalamovaniRadku zobrazitSymbol="false">true</zalamovaniRadku>
+                <znakovaSada>UTF-8</znakovaSada>
+                <cislovatZaznamy start="100">true</cislovatZaznamy>
+            </zaznamy>
+            <zobrazitTipy>true</zobrazitTipy>
+            <preferovanaSirka>1024</preferovanaSirka>
+            <preferovanaVyska>768</preferovanaVyska>
+            <menuBar plovouci="false">true</menuBar>
+            <animaceIkon>true</animaceIkon>
+            <barevneSchema>Bile</barevneSchema>
+            <jazyk>CZ</jazyk>
+        </rozhrani>
+        <sit>
+            <kontrolovatAktualizace priXSpusteni="10">true</kontrolovatAktualizace>
+            <citacSpusteni>4</citacSpusteni>
+        </sit>
+        <tisk>
+            <rozliseni jednotka="DPI">600</rozliseni>
+            <barevnost>Cernobile</barevnost>
+            <format>A5</format>
+            <orientace>Vyska</orientace>
+            <kvalita>Nizka</kvalita>
+            <duplex>true</duplex>
+            <okraje uvodniStranka="false" zobrazitOkraje="false">
+                <vlevo jednotka="mm">15</vlevo>
+                <vpravo jednotka = "mm">15</vpravo>
+                <nahore jednotka="mm">20</nahore>
+                <dole jednotka="mm">20</dole>
+            </okraje>
+            <barevnyModel>CMYK</barevnyModel>
+            <korekce>
+                <jas>0.75</jas>
+                <kontrast>0.16</kontrast>
+                <gamma>0.55</gamma>
+            </korekce>
+            <orezoveZnacky>true</orezoveZnacky>
+            <cislaStran>false</cislaStran>
+            <pocetKopii>10</pocetKopii>
+        </tisk>
+        <pocetZpracovavanychVlaken>8</pocetZpracovavanychVlaken>
+        <komprimovatVystup format="zip" miraKomprese="5">true</komprimovatVystup>
+        <povolitPluginy>false</povolitPluginy>
+    </nastaveni>
+    <nastaveni>
+        <rozhrani>
+            <font>
+                <standardni>
+                    <nazev>Helvetica</nazev>
+                    <velikost>20</velikost>
+                    <popredi typ="hex">#2E1FE6</popredi>
+                    <pozadi typ="hex">#141415</pozadi>
+                    <styl>Normalni</styl>
+                    <zarovnani>Stred</zarovnani>
+                </standardni>
+                <vybrano>
+                    <nazev>Consolas</nazev>
+                    <velikost>16</velikost>
+                    <popredi typ="hex">#242418</popredi>
+                    <pozadi typ="hex">#15E1D2</pozadi>
+                    <styl>Kurziva</styl>
+                    <zarovnani>Vpravo</zarovnani>
+                </vybrano>
+            </font>
+            <zaznamy>
+                <maxPocetNaStranku>1000</maxPocetNaStranku>
+                <radit>true</radit>
+                <typRazeni>Sestupne</typRazeni>
+                <metodaVystupu>CSV</metodaVystupu>
+                <povolitObrazky zobrazitPopisek="true">true</povolitObrazky>
+                <zakladniMena>CZK</zakladniMena>
+                <zalamovaniRadku zobrazitSymbol="true">true</zalamovaniRadku>
+                <znakovaSada>UTF-16</znakovaSada>
+                <cislovatZaznamy start="100">true</cislovatZaznamy>
+            </zaznamy>
+            <zobrazitTipy>false</zobrazitTipy>
+            <preferovanaSirka>1600</preferovanaSirka>
+            <preferovanaVyska>1000</preferovanaVyska>
+            <menuBar plovouci="false">false</menuBar>
+            <animaceIkon>false</animaceIkon>
+            <barevneSchema>Bile</barevneSchema>
+            <jazyk>EN</jazyk>
+        </rozhrani>
+        <sit>
+            <kontrolovatAktualizace priXSpusteni="10">true</kontrolovatAktualizace>
+            <citacSpusteni>2</citacSpusteni>
+        </sit>
+        <tisk>
+            <rozliseni jednotka="DPI">1200</rozliseni>
+            <barevnost>Barva</barevnost>
+            <format>A6</format>
+            <orientace>Sirka</orientace>
+            <kvalita>Standardni</kvalita>
+            <duplex>true</duplex>
+            <okraje uvodniStranka="false" zobrazitOkraje="true">
+                <vlevo jednotka="cm">2.8</vlevo>
+                <vpravo jednotka = "cm">2.8</vpravo>
+                <nahore jednotka="cm">2.1</nahore>
+                <dole jednotka="cm">2.1</dole>
+            </okraje>
+            <barevnyModel>HSV</barevnyModel>
+            <korekce>
+                <jas>0.5</jas>
+                <kontrast>0.5</kontrast>
+                <gamma>0.5</gamma>
+            </korekce>
+            <orezoveZnacky>true</orezoveZnacky>
+            <cislaStran>false</cislaStran>
+            <pocetKopii>1000</pocetKopii>
+        </tisk>
+        <pocetZpracovavanychVlaken>1</pocetZpracovavanychVlaken>
+        <komprimovatVystup format="zip" miraKomprese="1">true</komprimovatVystup>
+        <povolitPluginy>true</povolitPluginy>
+    </nastaveni>
+    <nastaveni>
+        <rozhrani>
+            <font>
+                <standardni>
+                    <nazev>Courier</nazev>
+                    <velikost>12</velikost>
+                    <popredi typ="hex">#161219</popredi>
+                    <pozadi typ="hex">#121610</pozadi>
+                    <styl>Kurziva</styl>
+                    <zarovnani>Stred</zarovnani>
+                </standardni>
+                <vybrano>
+                    <nazev>Courier</nazev>
+                    <velikost>12</velikost>
+                    <popredi typ="hex">#242412</popredi>
+                    <pozadi typ="html">#152016</pozadi>
+                    <styl>Kurziva</styl>
+                    <zarovnani>Vlevo</zarovnani>
+                </vybrano>
+            </font>
+            <zaznamy>
+                <maxPocetNaStranku>50</maxPocetNaStranku>
+                <radit>false</radit>
+                <typRazeni>Sestupne</typRazeni>
+                <metodaVystupu>PDF</metodaVystupu>
+                <povolitObrazky zobrazitPopisek="false">false</povolitObrazky>
+                <zakladniMena>USD</zakladniMena>
+                <zalamovaniRadku zobrazitSymbol="false">false</zalamovaniRadku>
+                <znakovaSada>ASCII</znakovaSada>
+                <cislovatZaznamy start="1000">true</cislovatZaznamy>
+            </zaznamy>
+            <zobrazitTipy>true</zobrazitTipy>
+            <preferovanaSirka>320</preferovanaSirka>
+            <preferovanaVyska>240</preferovanaVyska>
+            <menuBar plovouci="false">true</menuBar>
+            <animaceIkon>true</animaceIkon>
+            <barevneSchema>Sede</barevneSchema>
+            <jazyk>SK</jazyk>
+        </rozhrani>
+        <sit>
+            <kontrolovatAktualizace priXSpusteni="50">true</kontrolovatAktualizace>
+            <citacSpusteni>21</citacSpusteni>
+        </sit>
+        <tisk>
+            <rozliseni jednotka="DPI">600</rozliseni>
+            <barevnost>Barva</barevnost>
+            <format>A3</format>
+            <orientace>Sirka</orientace>
+            <kvalita>Vysoka</kvalita>
+            <duplex>true</duplex>
+            <okraje uvodniStranka="true" zobrazitOkraje="false">
+                <vlevo jednotka="cm">2.5</vlevo>
+                <vpravo jednotka = "cm">2.5</vpravo>
+                <nahore jednotka="cm">2.5</nahore>
+                <dole jednotka="cm">2.5</dole>
+            </okraje>
+            <barevnyModel>RGB</barevnyModel>
+            <korekce>
+                <jas>0.95</jas>
+                <kontrast>0.52</kontrast>
+                <gamma>0.54</gamma>
+            </korekce>
+            <orezoveZnacky>true</orezoveZnacky>
+            <cislaStran>false</cislaStran>
+            <pocetKopii>5</pocetKopii>
+        </tisk>
+        <pocetZpracovavanychVlaken>25</pocetZpracovavanychVlaken>
+        <komprimovatVystup format="zip" miraKomprese="10">true</komprimovatVystup>
+        <povolitPluginy>true</povolitPluginy>
+    </nastaveni>
+    <nastaveni>
+        <rozhrani>
+            <font>
+                <standardni>
+                    <nazev>Monospaced</nazev>
+                    <velikost>16</velikost>
+                    <popredi typ="dec">16,100,250</popredi>
+                    <pozadi typ="dec">12,154,247</pozadi>
+                    <styl>Normalni</styl>
+                    <zarovnani>Stred</zarovnani>
+                </standardni>
+                <vybrano>
+                    <nazev>Monospaced</nazev>
+                    <velikost>19</velikost>
+                    <popredi typ="dec">100,100,50</popredi>
+                    <pozadi typ="dec">200,251,100</pozadi>
+                    <styl>Tucne</styl>
+                    <zarovnani>Vlevo</zarovnani>
+                </vybrano>
+            </font>
+            <zaznamy>
+                <maxPocetNaStranku>10</maxPocetNaStranku>
+                <radit>true</radit>
+                <typRazeni>Vzestupne</typRazeni>
+                <metodaVystupu>PDF</metodaVystupu>
+                <povolitObrazky zobrazitPopisek="true">false</povolitObrazky>
+                <zakladniMena>JPY</zakladniMena>
+                <zalamovaniRadku zobrazitSymbol="false">true</zalamovaniRadku>
+                <znakovaSada>Unicode</znakovaSada>
+                <cislovatZaznamy start="10">true</cislovatZaznamy>
+            </zaznamy>
+            <zobrazitTipy>true</zobrazitTipy>
+            <preferovanaSirka>800</preferovanaSirka>
+            <preferovanaVyska>600</preferovanaVyska>
+            <menuBar plovouci="false">true</menuBar>
+            <animaceIkon>true</animaceIkon>
+            <barevneSchema>Modre</barevneSchema>
+            <jazyk>JP</jazyk>
+        </rozhrani>
+        <sit>
+            <kontrolovatAktualizace priXSpusteni="500">true</kontrolovatAktualizace>
+            <citacSpusteni>241</citacSpusteni>
+        </sit>
+        <tisk>
+            <rozliseni jednotka="DPI">300</rozliseni>
+            <barevnost>Barva</barevnost>
+            <format>A3</format>
+            <orientace>Vyska</orientace>
+            <kvalita>Vysoka</kvalita>
+            <duplex>false</duplex>
+            <okraje uvodniStranka="true" zobrazitOkraje="false">
+                <vlevo jednotka="cm">2.55</vlevo>
+                <vpravo jednotka = "cm">2.55</vpravo>
+                <nahore jednotka="cm">2.5</nahore>
+                <dole jednotka="cm">2.5</dole>
+            </okraje>
+            <barevnyModel>CMYK</barevnyModel>
+            <korekce>
+                <jas>0.21</jas>
+                <kontrast>0.16</kontrast>
+                <gamma>0.17</gamma>
+            </korekce>
+            <orezoveZnacky>false</orezoveZnacky>
+            <cislaStran>true</cislaStran>
+            <pocetKopii>1</pocetKopii>
+        </tisk>
+        <pocetZpracovavanychVlaken>2</pocetZpracovavanychVlaken>
+        <komprimovatVystup format="zip" miraKomprese="5">true</komprimovatVystup>
+        <povolitPluginy>true</povolitPluginy>
+    </nastaveni>    
+</root>

@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Konfigurace programu</title>
+</head>
+
+<body>
+
+<header>
+<h1>Konfigurace programu</h1>
+</header>
+<main>
+<article>
+<h2>Obsah</h2>
+<nav>
+<ul>
+	<li><a href="#uvod"><strong>Úvod</strong></a></li>
+	<li><a href="#metodika"><strong>Metodika</strong></a><ul>
+		<li><a href="#pouzite_nastroje"><strong>Použité nástroje</strong></a></li>
+	</ul>
+	</li>
+	<li><a href="#popis_elementu_a_atributu"><strong>Popis elementů a atributů</strong></a></li>
+	<li><a href="#popis_transformace"><strong>Popis transformace</strong></a></li>
+	<li><strong><a href="#popis_schematu">Popis schématu</a></strong></li>
+	<li><strong><a href="#popis_latex">Popis LaTeX</a></strong></li>
+	<li><strong><a href="#popis_html">Popis html</a></strong></li>
+	<li><strong><a href="#popis_json">Popis výstupu JSON</a></strong></li>
+	<li><a href="#zaver"><strong>Závěr</strong></a></li>
+</ul>
+</nav>
+<section>
+<h2 id="uvod">Úvod</h2>
+<p>Tento dokument pojednává o semestrálním projektu pro předmět "Značkovací 
+jazyky", jehož tématem bylo navrhnout nastavení/konfiguraci (smyšlené) aplikace.</p>
+	<p>Semestrální projekt obsahuje následující soubory:</p>
+<table style="border-collapse: collapse">
+	<tr>
+		<td style="color: #FFFFFF; background-color: #000000; text-align: center;"><strong>Název souboru</strong></td>
+		<td style="color: #FFFFFF; background-color: #000000; text-align: center;"><strong>Popis souboru</strong></td>
+	</tr>
+	<tr>
+		<td style="background-color: #F0F0F0; border-right-style: none; border-right-width: medium;">
+		<strong>popis.html</strong></td>
+		<td style="background-color: #F0F0F0; border-left-style: none; border-left-width: medium;">
+		HTML soubor s popisem tohoto projektu</td>
+	</tr>
+	<tr>
+		<td style="background-color: #C0C0C0"><strong>nastaveni.xml</strong></td>
+		<td style="background-color: #C0C0C0">XML soubor obsahující konfiguraci smyšleného počítačového programu</td>
+	</tr>
+	<tr>
+		<td style="background-color: #F0F0F0"><strong>nastaveni.xsd</strong></td>
+		<td style="background-color: #F0F0F0">XML schéma výše uvedeného XML souboru</td>
+	</tr>
+	<tr>
+		<td style="background-color: #C0C0C0"><strong>xml_to_json.xsl</strong></td>
+		<td style="background-color: #C0C0C0">XML transformační dokument pro převod výše uvedeného XML souboru do 
+		JSON souboru</td>
+	</tr>
+	<tr>
+		<td style="background-color: #F0F0F0"><strong>nastaveni.json</strong></td>
+		<td style="background-color: #F0F0F0">JSON soubor vygenerovaný pomocí transformačního dokumentu XSL</td>
+	</tr>
+	<tr>
+		<td style="background-color: #C0C0C0"><strong>nepojmenovany.png</strong></td>
+		<td style="background-color: #C0C0C0">Snímek obrazovky doposud 
+		nepojmenovaného programu</td>
+	</tr>
+	<tr>
+		<td style="background-color: #F0F0F0; height: 25px;"><strong>popis.tex</strong></td>
+		<td style="background-color: #F0F0F0; height: 25px;">LaTeX soubor s 
+		popisem projektu</td>
+	</tr>
+	<tr>
+		<td style="background-color: #C0C0C0; height: 25px;"><strong>popis.pdf</strong></td>
+		<td style="background-color: #C0C0C0; height: 25px;">PDF soubor s 
+		popisem tohoto projektu vygenerovaný pomocí pdflatex ze souboru 
+		"popis.tex"</td>
+	</tr>
+	<tr>
+		<td style="background-color: #F0F0F0; height: 25px;"><strong>zadani.txt</strong></td>
+		<td style="background-color: #F0F0F0; height: 25px;">Zadání tohoto 
+		projektu zadané cvičícím/přednášejícím</td>
+	</tr>
+	<tr>
+		<td style="background-color: #C0C0C0; height: 25px;"><strong>README.md</strong></td>
+		<td style="background-color: #C0C0C0; height: 25px;">Soubor obsahující 
+		jednoduchý popis repozitáře github</td>
+	</tr>
+	<tr>
+		<td style="background-color: #F0F0F0; height: 25px;"><strong>LICENSE.md</strong></td>
+		<td style="background-color: #F0F0F0; height: 25px;">Soubor obsahující 
+		text permisivní licence MIT (pro github)</td>
+	</tr>
+</table>
+</section>
+<section>
+<h2 id="metodika">Metodika</h2>
+<p>Nejprve byl navržen XML soubor, ze kterého bylo následně derivováno XML 
+schéma a testován transformační dokument pro převod XML souboru do JSON souboru.</p>
+<h3 id="pouzite_nastroje">Použité nástroje</h3>
+<p>Pro vytvoření souborů bylo využito většího množství programů a nástrojů, 
+přičemž jeden program dokonce vznikl samostatně pouze pro zjednodušení práce s 
+tímto projektem.</p>
+<table style="border-collapse: collapse">
+	<tr>
+		<td style="color: #FFFFFF; background-color: #000000; text-align: center;"><strong>Název nástroje</strong></td>
+		<td style="color: #FFFFFF; background-color: #000000; text-align: center;"><strong>Důvod využití</strong></td>
+	</tr>
+	<tr>
+		<td style="background-color: #F0F0F0"><strong>NetBeans</strong></td>
+		<td style="background-color: #F0F0F0">Kontrola syntaxe, transformace XML, pretty printing</td>
+	</tr>
+	<tr>
+		<td style="background-color: #C0C0C0"><strong>Doposud nepojmenovaný program</strong></td>
+		<td style="background-color: #C0C0C0">Kontrola syntaxe, kontrola správnosti JSON výstupu, podpora při 
+		tvorbě XML schématu, ověření XML schématu, kontrola html, transformace, 
+		pretty printing</td>
+	</tr>
+	<tr>
+		<td style="background-color: #F0F0F0"><strong>Kate</strong></td>
+		<td style="background-color: #F0F0F0">Kontrola syntaxe, html, LaTeX</td>
+	</tr>
+	<tr>
+		<td style="background-color: #C0C0C0"><strong>Bluefish</strong></td>
+		<td style="background-color: #C0C0C0">ditto</td>
+	</tr>
+	<tr>
+		<td style="background-color: #F0F0F0"><strong>wc (word counter)</strong></td>
+		<td style="background-color: #F0F0F0">Program pro počítání znaků/řádek na Unixových operačních systémech</td>
+	</tr>
+	<tr>
+		<td style="background-color: #C0C0C0"><strong>pdflatex</strong></td>
+		<td style="background-color: #C0C0C0">Generování výstupního PDF souboru 
+		z vstupního LaTeX souboru</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td style="text-align: center">
+		<a href="nepojmenovany.png">
+		<img width="640" height="360" alt="Snímek obrazovky doposud nepojmenovaného programu" src="nepojmenovany.png"></a></td>
+	</tr>
+	<tr>
+		<td style="border: 1px solid #000000; text-align: center">Obr. 1: Snímek obrazovky doposud nepojmenovaného programu</td>
+	</tr>
+</table>
+</section>
+<section>
+<h2 id="popis_elementu_a_atributu">Popis elementů a atributů</h2>
+<p>Zamýšlená konfigurace aplikace se zaměřuje na tisk, velikost oken, síť a 
+určitý druh záznamů.</p>
+<p>Zde je uveden výčet některých elementů a atributů, které se vyskytují v XML 
+souboru, jeho schématu a vygenerovaném JSON souboru.</p>
+<p>XML obsahuje jeden kořenový element "<strong>root</strong>", do kterého je vnořeno celkem 5 
+konfigurací (ukázkových záznamů), jak je požadováno v zadání. Do samotné 
+konfigurace jsou vnořeny další elementy, některé elementy mají ještě zadány 
+atributy.</p>
+<p>Element "<strong>rozhrani</strong>", který je vnořen do elementu "<strong>nastaveni</strong>", 
+představuje konfiguraci (hypotetického) grafického rozhraní, které je zobrazeno 
+koncovému uživateli.</p>
+	<p>V elementu "<strong>rozhrani</strong>" se nachází element "<strong>font</strong>", který 
+nastavuje vzhled písma ("<strong>standardni</strong>" a "<strong>vybrano</strong>"), tedy dvě konfigurace, pokud 
+je text nevybrán a vybrán; u sub-elementu "<strong>popredi</strong>" a "<strong>pozadi</strong>" je atributem 
+uvedeno, v jakém formátu je zadaná hodnota barvy uvedena (příklad: hex: #161616 
+nebo dec: 100,50,100).</p>
+	<p>Dalším sub-elementem v "<strong>rozhrani</strong>" je i element 
+"<strong>zaznamy</strong>", který může představovat seznam záznamů, které jsou uživateli 
+představovány.</p>
+	<p>"<strong>zobrazitTipy</strong>" nastavuje, zda se uživateli po startu budou 
+zobrazovat (nepříjemné) tipy programu.</p>
+	<p>"<strong>preferovanaSirka</strong>" a 
+"<strong>preferovanaVyska</strong>" určují, jak velké bude okno aplikace při startu.</p>
+	<p>"<strong>menuBar</strong>" 
+označuje lištu nástrojů a zda má tato lišta být zobrazena.</p>
+	<p>"<strong>nastaveni</strong>" dále 
+obsahuje element "<strong>sit</strong>", který určuje, jakým způsobem bude program pracovat se 
+sítí; v tomto případě je k dispozici sub-element, který určuje, zda-li se budou 
+kontrolovat aktualizace a atribut určuje, jak často tomu tak bude (kolikáté 
+spuštění aplikace), přičemž čítač spuštění aplikace je uveden v dalším elementu, 
+v tomto případě je tedy při každém otevření aplikace soubor s nastavením nutné pokaždé 
+aktualizovat, což v některých případech nemusí být žádoucí, v takovém případě je 
+možné čítač odstranit a nechat pouze boolean hodnotu, jestli má aplikace být 
+aktualizována při každém spuštění.<br>Element "<strong>tisk</strong>" určuje nastavení tiskárny 
+při posílání výstupu na tiskárnu.</p>
+	<p>"<strong>rozliseni</strong>" je uváděno včetně atributu, 
+který určuje jednotku.</p>
+	<p>Atribut "<strong>uvodniStranka</strong>" u elementu "<strong>okraje</strong>" určuje, 
+zda-li se i úvodní stránka bude řídit okraji zbytku dokumentu. V opačném případě 
+by na tuto úvodní stránku byl vytištěn pouze název dokumentu.</p>
+	<p>Atribut 
+"<strong>zobrazitOkraje</strong>" zapíná nebo vypíná možnost vytištění okrajů pomocí vodících 
+čar.</p>
+	<p>"<strong>duplex</strong>" zapíná/vypíná nastavení tisk na obě strany papíru, pokud to 
+tiskárna umožňuje.</p>
+	<p>"<strong>orezoveZnacky</strong>" je element, který zapíná/vypíná tisk 
+ořezových značek (při potřebě oříznout výsledný papír), využívá se v 
+profesionálním tisku.</p>
+	<p>Element "<strong>pocetZpracovavanychVlaken</strong>" určuje, jaké 
+maximální množství vláken bude odstartováno, pokud program vykonává náročnou 
+(ale jednoduše paralelizovatelnou) úlohu.</p>
+	<p>"<strong>komprimovatVystup</strong>" určuje, zda-li 
+výstupní soubor programu (jeho data) budou komprimována a na jaké úrovni.</p>
+	<p>"<strong>povolitPluginy</strong>" určuje, zda-li program umožní načtení podprogramů dodávaných 
+třetí osobou.</p>
+<p>XML bylo validováno mimo jiné na adrese 
+<a href="http://codebeautify.org/xmlvalidator">http://codebeautify.org/xmlvalidator</a></p>
+</section>
+<section>
+<h2 id="popis_transformace">Popis transformace</h2>
+<p>Transformační soubor do JSON se poněkud liší od transformací, které byly 
+probírány na cvičení. V tomto případě si transformační soubor automaticky 
+bere názvy elementů, jejich atributů a potomků a vytváří výstupní JSON soubor.</p>
+<p><span style="color: #FF0000"><strong>Varování!</strong></span><br>Transformační soubor byl zamýšlen pro transformaci pouze jediného souboru - XML 
+souboru obsaženého v tomto projektu, na němž byl taktéž testován, na jiné XML 
+soubory s jinou strukturou patrně nebude fungovat.</p>
+</section>
+<section>
+<h2 id="popis_schematu">Popis schématu</h2>
+<p>Schéma je vygenerováno pomocí vzoru "Venetian blind", který od ostatních 
+vzorů neobsahuje žádné zásadní nevýhody, programem vytvořeným pro tento projekt.</p>
+	<p>Schéma bylo následně upraveno a byly přidány některé restrikce (u 
+	elementů typu string jsou uvedeny výčtové typy, u číselných hodnot minimální 
+	a maximální hodnota).</p>
+	<p>Schéma bylo validováno vůči XML souboru.</p>
+</section>
+<section>
+<h2 id="popis_latex">Popis LaTeX</h2>
+<p>Byť zadání v LaTeX není podmínkou získání zápočtu, je tento soubor přesto 
+přiložen v naději získání většího počtu bodů.</p>
+	<p>Výsledný PDF dokument je vysázen pomocí programu pdflatex.</p>
+</section>
+<section>
+<h2 id="popis_html">Popis html</h2>
+<p>html dokument byl kontrolován pomocí validátoru specifikovaného v zadání 
+projektu na adrese <a href="https://validator.w3.org/">https://validator.w3.org/</a></p>
+	<p>html dokument má 12393 znaků.</p>
+</section>
+<section>
+<h2 id="popis_json">Popis JSON</h2>
+<p>Vygenerovaný JSON dokument byl validován pomocí webové služby na adrese
+<a href="http://jsonlint.com/">http://jsonlint.com/</a></p>
+</section>
+<section>
+<h2 id="zaver">Závěr</h2>
+<p>Cílem projektu bylo vytvořit XML soubor obsahující konfiguraci smyšlené 
+aplikace, vytvoření souboru s XML schématem a vytvoření souboru s transformačním 
+modelem do JSON, přičemž pomocí tohoto souboru měl být vygenerován výstupní JSON 
+soubor. Toho bylo docíleno. </p>
+</section>
+</article>
+</main>
+<footer>
+Copyright, xkovl &copy; 2017
+</footer>
+</body>
+
+</html>
